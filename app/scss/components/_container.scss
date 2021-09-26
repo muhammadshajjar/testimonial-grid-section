@@ -3,7 +3,8 @@
 .grid-container {
   max-width: rem(1111);
   width: 90%;
-  margin: 0 auto;
+  margin: rem(40) auto;
+
   min-height: 100vh;
   display: grid;
   justify-content: center;
@@ -25,6 +26,7 @@
       "kira kira kira";
   }
   @include breakpoint-up(large) {
+    margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "daniel daniel jonathan kira"
