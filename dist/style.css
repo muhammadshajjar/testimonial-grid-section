@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+[hidden],
+template {
+  display: none;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+}
+blockquote,
+body,
+figure,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button,
+input,
+textarea {
+  border: none;
+  font: inherit;
+  outline: none;
+}
+button {
+  color: inherit;
+  cursor: pointer;
+}
+body {
+  background: #ecf2f8;
+  font-family: Barlow Semi Condensed, sans-serif;
+  font-weight: 500;
+}
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  border: 0 !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+.grid-container {
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-column-gap: 1.875rem;
+  -moz-column-gap: 1.875rem;
+  column-gap: 1.875rem;
+  display: grid;
+  grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 69.4375rem;
+  min-height: 100vh;
+  row-gap: 1.5rem;
+  width: 90%;
+}
+@media (min-width: 50em) {
+  .grid-container {
+    grid-template-areas: "daniel daniel jonathan" "jeanette patrick patrick" "kira kira kira";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 65em) {
+  .grid-container {
+    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  border-radius: 0.625rem;
+  -webkit-box-shadow: 2.1875rem 3.375rem 2.8125rem -2.5rem rgba(72, 85, 106, 0.3);
+  box-shadow: 2.1875rem 3.375rem 2.8125rem -2.5rem rgba(72, 85, 106, 0.3);
+  color: #fff;
+  line-height: 1.3;
+  max-width: 28.75rem;
+  padding: 1.875rem;
+}
+@media (min-width: 50em) {
+  .card {
+    max-width: 100%;
+  }
+}
+.card--violet {
+  background-color: #7541c8;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-position-x: 80%;
+  background-repeat: no-repeat;
+  grid-area: daniel;
+}
+.card--grey {
+  background-color: #48556a;
+  grid-area: jonathan;
+}
+.card--white {
+  background-color: #fff;
+  color: #48556a;
+}
+.card--blue {
+  background-color: #19212e;
+  grid-area: patrick;
+}
+.card--kira {
+  grid-area: kira;
+}
+.card--jeanette {
+  grid-area: jeanette;
+}
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.045px;
+  margin-bottom: 1.0625rem;
+  margin-top: 0.6875rem;
+}
+.card__testimonial {
+  font-size: 0.84375rem;
+  opacity: 0.7;
+}
+.profile {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.profile__img {
+  border-radius: 50%;
+  height: 2rem;
+  margin-right: 0.9375rem;
+}
+.profile__img--violet {
+  border: 2px solid #9a7bcc;
+}
+.profile__title {
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+.profile__graduate {
+  font-size: 0.625rem;
+  opacity: 0.5;
+}
+.attribution {
+  font-size: 0.75rem;
+  padding: 0.75rem 0;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.attribution a:hover {
+  color: #7541c8;
+  font-size: 0.8125rem;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+/*# sourceMappingURL=style.css.map */

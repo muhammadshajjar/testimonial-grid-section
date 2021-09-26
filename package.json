@@ -1,0 +1,24 @@
+{
+  "name": "testimonials-grid-section-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.1.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+.grid-container {
+  max-width: rem(1111);
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  row-gap: rem(24);
+  column-gap: rem(30);
+  grid-template-areas:
+    "daniel"
+    "jonathan"
+    "jeanette"
+    "patrick"
+    "kira";
+
+  @include breakpoint-up(medium) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "daniel daniel jonathan"
+      "jeanette patrick patrick"
+      "kira kira kira";
+  }
+  @include breakpoint-up(large) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+  }
+}

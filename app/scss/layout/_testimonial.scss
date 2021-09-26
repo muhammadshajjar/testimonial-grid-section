@@ -1,0 +1,90 @@
+@use "../abstracts/" as *;
+.card {
+  padding: rem(30);
+  line-height: 1.3;
+  color: $White;
+  border-radius: rem(10);
+  box-shadow: rem(35) rem(54) rem(45) rem(-40) hsl(217deg 19% 35% / 30%);
+  max-width: rem(460);
+
+  @include breakpoint-up(medium) {
+    max-width: 100%;
+  }
+  &--violet {
+    grid-area: daniel;
+    background-color: $Moderate-violet;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+  }
+
+  &--grey {
+    grid-area: jonathan;
+    background-color: $Very-dark-grayish-blue;
+  }
+
+  &--white {
+    background-color: $White;
+    color: $Very-dark-grayish-blue;
+  }
+  &--blue {
+    background-color: $Very-dark-blackish-blue;
+    grid-area: patrick;
+  }
+  &--kira {
+    grid-area: kira;
+  }
+  &--jeanette {
+    grid-area: jeanette;
+  }
+  &__title {
+    margin-top: rem(11);
+    margin-bottom: rem(17);
+    font-size: rem(20);
+    font-weight: 600;
+    letter-spacing: 0.045px;
+  }
+  &__testimonial {
+    opacity: 0.7;
+    font-size: rem(13.5);
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    height: rem(32);
+    border-radius: 50%;
+    margin-right: rem(15);
+    &--violet {
+      border: 2px solid $light-violet;
+    }
+  }
+  &__title {
+    font-size: rem(11);
+    font-weight: 500;
+  }
+  &__graduate {
+    opacity: 0.5;
+    font-size: rem(10);
+  }
+}
+
+.attribution {
+  font-size: rem(12);
+  text-align: center;
+  padding: rem(12) 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    color: $Moderate-violet;
+    font-size: rem(13);
+  }
+}
